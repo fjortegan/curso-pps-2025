@@ -4,7 +4,7 @@ require 'vendor/autoload.php';
 use Firebase\JWT\JWT;
 // JWT generado (modifícalo con el tuyo)
 $token = isset($_GET['jwt'])? $_GET['jwt'] : 
-"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiYWRtaW4iLCJyb2xlIjoiYWRtaW4ifQ.POg2q5AiVu34ExCPjfIae3O8d-XK7ybbYNsG2L7GOL4";
+"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiYWRtaW4iLCJyb2xlIjoiYWRtaW4ifQ.sjghSlNCPFVXAvnnOJKRb2bHvqm5ClmEbuLZSF7oDcM";
 // Decodificar sin verificar la firma (Inseguro, solo para pruebas)
 $tokenParts = explode(".", $token);
 if (count($tokenParts) !== 3) {

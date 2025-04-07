@@ -1,7 +1,7 @@
 <?php
 require 'vendor/autoload.php';
 use Firebase\JWT\JWT;
-$key = "secret"; //Clave débil (peligroso en producción)
+$key = "weak_security"; //Clave débil (peligroso en producción)
 $payload = [
 "user" => "hacker",
 "role" => "superadmin" //Escalando privilegios

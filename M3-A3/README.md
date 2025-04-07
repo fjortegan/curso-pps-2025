@@ -15,6 +15,10 @@ Se ejecuta el comando: `./composer-install.sh`
 
 Este comando crea la carpeta `vendor` y los archivos de configuración de composer. 
 
-Empezamos a crear los scripts siguiendo las intrucciones de la tarea, con los siguientes resultados:
+Empezamos a crear los scripts siguiendo las intrucciones de la tarea (cambiando `secret` y modificando algo `jwt_decode.php`), con los siguientes resultados:
+
 
 ![Captura 1](capturas/captura1.png)
+![Captura 2](capturas/captura2.png)
+![Captura 3](capturas/captura3.png)
+![Captura 4](capturas/captura4.png)

@@ -3,6 +3,6 @@
 
 ### Preparación del entorno
 
-En lugar de instalar directamente apache o composer en mi máquina he usado imágenes docker oficiales: composer y php:apache
+En lugar de instalar directamente apache o composer en mi máquina he usado imágenes docker oficiales: `composer` y `php:apache`
 
-Los comandos los he incluído en dos archivos: composer-install.sh y `server.sh`
+Los comandos para crear los contenedores los he incluído en dos archivos: `composer-install.sh` y `server.sh`

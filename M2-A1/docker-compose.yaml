@@ -1,0 +1,28 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: mariadb
+    volumes:
+      - ./dbinit:/docker-entrypoint-initdb.d
+    environment:
+      MARIADB_DATABASE: seguridad_db
+      MARIADB_ROOT_PASSWORD: root
+
+  adminer:
+    image: adminer
+    depends_on:
+      - db
+    ports:
+      - 8081:8080
+
+  server:
+    image: php:apache
+    depends_on:
+      - db
+    ports:
+      - 80:80
+    volumes:
+      - .:/var/www/html
+

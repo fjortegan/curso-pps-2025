@@ -1,0 +1,9 @@
+services:
+  server:
+    image: php:apache
+    ports:
+      - 80:80
+    volumes:
+      - config:/etc/apache2/sites-available
+volumes:
+  config:
